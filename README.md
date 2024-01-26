@@ -1,37 +1,18 @@
-[//]: # "GHELESEL David-Mihai"
+GHELESEL DAVID-MIHAI
 
-###Implementarea Tabelei Hash
+Implementing a Hash Table
 
-Pentru realizarea acestui proiect, am folosit urmatoarele structuri:
+For this project, I used the following structures:
 
 1. WordCount
 2. WordList
 3. HashTable
 4. LinkedList
 
-Primele doua structuri erau si cele mai simple, deoarece contineau
-cea mai putina informatie. Am folosit structura **_WordCount_** pentru a
-stoca un anumit cuvant si numarul de aparitii al cuvantului in text. Aceasta
-informatie mi-a fost de folos atunci cand trebuie sa sortez lista de cuvinte
-de o anumita dimensiune, dupa introducerea unui cuvant nou.
+The first two structures were also the simplest, as they contained the least information. We used the WordCount structure to store a particular word and the number of occurrences of the word in the text. This information was useful when I needed to sort the list of words of a certain size after entering a new word.
 
-Pe de alta parte,
-**_WordList_** reprezenta, intr-un fel, coloana verticala a cuvintelor din
-tabela hash. Prin "coloana verticala", ma refer la faptul ca **_WordList_**
-continea un numar (ce reprezenta numarul de litere) si o lista generica
-simplu inlantuita de cuvinte care aveau lungimea egala cu numarul de litere
-respectiv. Astfel, daca am vizualiza pe verticala desenul din pdf-ul temei,
-aceasta structura ar putea fi vizualizata uitandu-ne de sus in jos, incepand
-cu un cuvant care are cele mai multe aparitii si continuand inspre cuvintele
-cu mai putine aparitii. Desigur, daca numarul de aparitii este acelasi, se ia
-in considerarea ordinea lexicografica.
+On the other hand, WordList represents, in a way, the vertical column of words in the hash table. By "vertical column", I mean that WordList contained a number (representing the number of letters) and a simple generic list of words that were equal in length to that number of letters. Thus, this structure could be viewed by looking from top to bottom, starting with a word that has the most occurrences and continuing towards the words with the fewest occurrences. If the number of occurrences is the same, the lexicographic order is taken into account.
 
-Structura **_HashTable_** urmeaza modelul dat in descrierea din pdf-ul cu enuntul
-temei. Astfel, am folosit un numar M pentru a stoca numarul de elemente din tabela hash
-(in cazul nostru numarul de litere), o functie fh care calculeaza indexul din tabel
-al unui anumit element si, in cele din urma, v, o lista generica simplu inlantuita care continea
-la randul sau o alta lista, dupa cum am explicat mai sus prin expunerea
-scopului lui WordList.
+For the HashTable structure, we used a number M to store the number of elements in the hash table (in our case the number of letters), a function fh that calculates the index in the table of a given element, and finally v, a simple generic list containing in turn another list, as explained above (at the WordList structure).
 
-In final, **_LinkedList_** reprezinta o lista generica simplu inlantuita, aceasta
-a fost structura cea mai folosita in acest proiect.
+Finally, **_LinkedList_** represents a simple linked generic list, this was the structure most used in this project.
